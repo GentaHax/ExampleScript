@@ -5,12 +5,11 @@
 * [sendPacketRaw](#sendPacketRaw) 
 
 
-## sendPacket
+## ・sendPacket
 ```js
 sendPacket(int, stringPacket)
-
-- to Send a Packet To The Server With a Specific Packet Type.
-
+- int // Type
+- string // String Packet
 ```
 
 Example :
@@ -21,11 +20,12 @@ sendPacket(2, "action|input\n|text|".. text)
 Output To Console : KONTOL
 ```
 
-## sendVariant
+## ・sendVariant
 ```js
 sendVariant(var_t, int, int)
-
-- ?
+- var_t // Variant List
+- int // Netid
+- int // Delay
 ```
 
 Example :
@@ -42,3 +42,7 @@ sendVariant({
 [1] = "GentaHax!", 
 }) 
 ```
+
+## ・sendPacketRaw
+```js
+ssndPacketRaw(boolean send_to_client, tankPacketStruct) 
