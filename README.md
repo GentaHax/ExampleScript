@@ -7,10 +7,8 @@
 
 ## sendPacket
 ```xml
-
 sendPacket(int, string)
-
-to send a packet to the server with a specific packet type.
+to Send a Packet To The Server With a Specific Packet Type.
 
 ```
 
