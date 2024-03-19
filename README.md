@@ -4,7 +4,9 @@
 * [sendVariant](#sendVariant) 
 * [sendPacketRaw](#sendPacketRaw)
 * [setGid](#setGid) 
-* [setMac](#setMac) 
+* [setMac](#setMac)
+* [randomGid](#randomGid) 
+* [randomMac](#randomMac)
 
 
 ## ・sendPacket
@@ -96,4 +98,26 @@ setMac(std::sring)
 ```lua
 macAddress = "02:00:00:00:00:00"
 setMac(macAddress)
+```
+
+## ・randomGid
+```js
+randomGid()
+- Generate Random Google ID
+```
+
+`Example Methode:`
+```lua
+randomGid()
+```
+
+## ・randomMac
+```js
+randomMac() 
+- Generate Random Mac Address
+```
+
+`Example Methode:`
+```lua
+randomMac() 
 ```
