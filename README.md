@@ -1,3 +1,17 @@
-# GentaHax API
+# Function
 
-* [sendPacket](#sendPacket): used to send a packet to the server with a specific packet type.
+* [sendPacket](#sendPacket)
+a
+a
+
+a
+a
+a
+a
+a
+a
+
+
+
+## sendPacket
+`sendPacket(int, string)`
