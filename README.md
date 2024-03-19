@@ -12,12 +12,12 @@ sendPacket(int, stringPacket)
 - string // String Packet
 ```
 
-Example :
+Example Methode:
 ```lua
 text = "KONTOL"
 sendPacket(2, "action|input\n|text|".. text)
 
-Output To Console : KONTOL
+-- Talk. 
 ```
 
 ## ・sendVariant
@@ -28,21 +28,46 @@ sendVariant(var_t, int, int)
 - int // Delay
 ```
 
-Example :
 ```lua
--- Log To Console.
+Variant List:
+・"OnTextOverlay"
+・"OnConsoleMessage"
+・"OnDialogRequest"
+・"OnReconnect"
+・"OnSetClothing"
+・"OnPlayPositioned"
+・"OnSendToServer"
+・"OnSendRoleSkinsAndTitles"
+・"SetHasGrowID"
+・"OnSetBux"
+```
+
+Example Methode:
+```lua
 sendVariant({
 [0] = "OnConsoleMessage", 
-[1] = "GentaHax!", 
+[1] = "GentaHax!",
 })
 
--- Text Overlay
-sendVariant({
-[0] = "OnTextOverlay", 
-[1] = "GentaHax!", 
-}) 
+-- Sending To Console. 
 ```
 
 ## ・sendPacketRaw
 ```js
-ssndPacketRaw(boolean send_to_client, tankPacketStruct) 
+ssndPacketRaw(boolean send_to_client, tankStructPacket) 
+- bool send_to_client // true, false
+- tankStructPacket // struct Packet
+```
+
+Example Methode:
+```lua
+sendPacketRaw(false, 
+    {
+      type = 10,
+      value = 98
+    }
+) 
+
+-- Weared Pickaxe. 
+
+```
