@@ -6,9 +6,9 @@
 
 
 ## sendPacket
-```xml
-sendPacket(int, string)
-to Send a Packet To The Server With a Specific Packet Type.
+```js
+sendPacket(int, stringPacket)
+- to Send a Packet To The Server With a Specific Packet Type.
 
 ```
 
