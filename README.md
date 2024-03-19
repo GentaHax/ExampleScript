@@ -2,7 +2,9 @@
 
 * [sendPacket](#sendPacket)
 * [sendVariant](#sendVariant) 
-* [sendPacketRaw](#sendPacketRaw) 
+* [sendPacketRaw](#sendPacketRaw)
+* [setGid](#setGid) 
+* [setMac](#setMac) 
 
 
 ## ・sendPacket
@@ -54,7 +56,7 @@ sendVariant({
 
 ## ・sendPacketRaw
 ```js
-ssndPacketRaw(boolean send_to_client, tankStructPacket) 
+sendPacketRaw(boolean send_to_client, tankStructPacket) 
 - bool send_to_client // true, false
 - tankStructPacket // struct Packet
 ```
@@ -70,4 +72,28 @@ sendPacketRaw(false,
 
 -- Weared Pickaxe. 
 
+```
+
+## ・setGid
+```js
+setGid(std::string) 
+- it Has Max 37 Char.
+```
+
+`Example Methode:`
+```lua
+googleID = "hObx7tOj-6KzgT-Gx9k-t7gq-gIsingkontol"
+setGid(GoogleID) 
+```
+
+## ・setMac
+```js
+setMac(std::sring) 
+- it Has Max 18 Char.
+```
+
+`Example Methode:`
+```lua
+macAddress = "02:00:00:00:00:00"
+setMac(macAddress)
 ```
