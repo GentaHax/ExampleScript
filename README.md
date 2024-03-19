@@ -12,7 +12,7 @@ sendPacket(int, stringPacket)
 - string // String Packet
 ```
 
-### Example Methode:
+`Example Methode:`
 ```lua
 text = "KONTOL"
 sendPacket(2, "action|input\n|text|".. text)
