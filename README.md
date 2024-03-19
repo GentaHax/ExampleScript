@@ -7,6 +7,9 @@
 * [setMac](#setMac)
 * [randomGid](#randomGid) 
 * [randomMac](#randomMac)
+* [checkTile](#checkTile) 
+* [getTile](#getTile) 
+* [getExtraTile](#getExtraTile)
 
 
 ## ・sendPacket
@@ -120,4 +123,47 @@ randomMac()
 `Example Methode:`
 ```lua
 randomMac() 
+```
+
+## ・checkTile
+```js
+checkTile(int, int) 
+- int x
+- int y
+```
+
+`Example Methode:`
+```lua
+if checkTile(0, 0).fg == 2 then
+logToConsole("Valid!") 
+end
+```
+
+## ・getTile
+```js
+getTile(int, int) 
+- int x
+- int y
+```
+
+`Example Methode:`
+```lua
+if getTile(0, 0).fg == 242 then
+logToConsole("I Found World Lock In Pos 0,0")
+end
+```
+
+## ・getExtraTile
+```js
+getExtraTile(int, int) 
+- int x
+- int y
+```
+
+`Example Methode:`
+```lua
+extra = getExtraTile() 
+if extra.valid then
+logToConsole("Valid!") 
+end
 ```
