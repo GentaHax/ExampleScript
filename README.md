@@ -42,7 +42,7 @@ Variant List:
 ・"OnSetBux"
 ```
 
-Example Methode:
+`Example Methode:`
 ```lua
 sendVariant({
 [0] = "OnConsoleMessage", 
@@ -59,7 +59,7 @@ ssndPacketRaw(boolean send_to_client, tankStructPacket)
 - tankStructPacket // struct Packet
 ```
 
-Example Methode:
+`Example Methode:`
 ```lua
 sendPacketRaw(false, 
     {
