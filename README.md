@@ -1,17 +1,16 @@
 # Function
 
 * [sendPacket](#sendPacket)
-a
-a
-
-a
-a
-a
-a
-a
-a
-
+* [sendVariant](#sendVariant) 
+* [sendPacketRaw](#sendPacketRaw) 
 
 
 ## sendPacket
 `sendPacket(int, string)`
+to send a packet to the server with a specific packet type.
+
+Example :
+```lua
+text = "KONTOL"
+sendPacket(2, "action|input\n|text|".. text)
+```
