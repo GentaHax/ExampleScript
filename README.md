@@ -6,8 +6,13 @@
 
 
 ## sendPacket
-`sendPacket(int, string)`
+```xml
+<
+sendPacket(int, string)
+
 to send a packet to the server with a specific packet type.
+>
+```
 
 Example :
 ```lua
